@@ -1,0 +1,26 @@
+:root {
+    --grey-: #f3f4f3;
+    --orange-: #faf4ee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background: var(--gray-900);
+    color: var(--gray-300);
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body,
+  input,
+  textarea,
+  button {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
