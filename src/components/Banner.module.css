@@ -26,9 +26,9 @@
     border: 1px solid #f3f4f3;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 79px;
+    margin-left: 7.9rem;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    font-size: 2rem;
     transition: all .3s;
   }
   

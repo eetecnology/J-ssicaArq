@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-          Jéssica Campos
+          JÉSSICA CAMPOS
         </div>
         <div className={styles.menu}>
         <nav className={styles.navbar}>
@@ -30,10 +30,10 @@ export default function Header() {
         </button>
         {<nav className={`${styles.navbarMobile} ${menuOpen ? styles.menuOpen : ''}`}>
           <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#evaluation">Avaliação</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#projects">PROJETOS</a></li>
+            <li><a href="#evaluation">AVALIAÇÕES</a></li>
+            <li><a href="#contact">CONTATO</a></li>
           </ul>
         </nav>}
       </div>
