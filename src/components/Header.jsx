@@ -18,12 +18,13 @@ export default function Header() {
         <div className={styles.menu}>
         <nav className={styles.navbar}>
           <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#evaluation">Avaliação</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#projects">PROJETOS</a></li>
+            <li><a href="#evaluation">AVALIAÇÕES</a></li>
+            <li><a href="#contact">CONTATO</a></li>
           </ul>
         </nav>
+        <div/>
         <button onClick={toggleMenu} className={styles.buttonMenu}>
           {menuOpen? <BurguerMenuClose size={15} className={styles.burgerMenu} /> : <BurguerMenu size={15} className={styles.burgerMenuClose} />}
         </button>

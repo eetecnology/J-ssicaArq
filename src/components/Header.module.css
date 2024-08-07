@@ -4,23 +4,31 @@
   left: 0;
   width: 100%;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.2); 
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(47, 51, 49, 0.7);
+  backdrop-filter: blur(0.3rem);
+  z-index: 1;
+  box-shadow: var(--grey-10);
+  height: 7vh;
+  font-size: 2rem;
 }
 
 .menu {
-  height: 82px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
+  margin: 1.2rem 0 0 7.9rem;
+  height: 50%;
 }
 
 .logo {
   color: #f3f4f3;
-  font-size: 1.5rem;
+  font-size: 2.7rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.2rem 0 0 7.9rem;
+  position: absolute;
 }
 
 .navbar ul {
@@ -39,15 +47,15 @@
 }
 
 .navbar a {
-  font-size: 15px;
-  color: #f3f4f3;
+  font-size: 1.8rem;
+  color: var(--grey-1);
   font-weight: 700;
   line-height: 20.22px;
   transition: color .3s;
 }
 
 .navbar a:hover {
-  color: #dadddb;
+  color: var(--grey-8);
 }
 
 .burgerMenu, .burgerMenuClose, .navbarMobile, .buttonMenu {

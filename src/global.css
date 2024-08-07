@@ -1,25 +1,25 @@
 :root {
-    --grey-green-100: #f3f4f3;
-    --grey-green-200: #edefee;
-    --grey-green-300: #dadddb;
-    --grey-green-400: #87928b;
-    --grey-green-500: #7a837d;
-    --grey-green-600: #6c756f;
-    --grey-green-700: #656e68;
-    --grey-green-800: #515853;
-    --grey-green-900: #3d423f;
-    --grey-green-1000: #2f3331;
+    --grey-green-1: #f3f4f3;
+    --grey-green-2: #edefee;
+    --grey-green-3: #dadddb;
+    --grey-green-4: #87928b;
+    --grey-green-5: #7a837d;
+    --grey-green-6: #6c756f;
+    --grey-green-7: #656e68;
+    --grey-green-8: #515853;
+    --grey-green-9: #3d423f;
+    --grey-green-10: rgba(0, 0, 0,0.2);
      
-    --orange-100: #faf4ee;
-    --orange-200: #f8efe6;
-    --orange-300: #f0deca;
-    --orange-400: #ce9455;
-    --orange-500: #b9854d;
-    --orange-600: #a57644;
-    --orange-700: #9b6f40;
-    --orange-800: #7c5933;
-    --orange-900: #5d4326;
-    --orange-1000: #48341e;
+    --orange-1: #faf4ee;
+    --orange-2: #f8efe6;
+    --orange-3: #f0deca;
+    --orange-4: #ce9455;
+    --orange-5: #b9854d;
+    --orange-6: #a57644;
+    --orange-7: #9b6f40;
+    --orange-8: #7c5933;
+    --orange-9: #5d4326;
+    --orange-10: #48341e;
     
     --grey-1: #fbfcfb;
     --grey-2: #f9faf9;
@@ -35,14 +35,20 @@
     --grey-12: #242525;
     --grey-13: #111111;
 }
+
+:focus {
+  outline: transparent;
+  box-shadow: var(--grey-13);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
     font-size: 62.5%;
     list-style: none;
     text-decoration: none;
+    font-family: "Playfair Display SC", serif;
+    font-style: normal;
   }
   
   body {
@@ -55,5 +61,15 @@
   button {
     font-weight: 400;
     font-size: 1rem;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: none;
   }
   
