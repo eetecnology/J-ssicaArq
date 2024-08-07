@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0px;
+}
