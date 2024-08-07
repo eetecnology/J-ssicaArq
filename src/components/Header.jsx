@@ -12,10 +12,10 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.menu}>
-        <div className={styles.logo}>
+      <div className={styles.logo}>
           Jéssica Campos
         </div>
+        <div className={styles.menu}>
         <nav className={styles.navbar}>
           <ul>
             <li><a href="#about">Sobre</a></li>
@@ -25,7 +25,7 @@ export default function Header() {
           </ul>
         </nav>
         <button onClick={toggleMenu} className={styles.buttonMenu}>
-          {menuOpen? <BurguerMenuClose className={styles.burgerMenu} /> : <BurguerMenu className={styles.burgerMenuClose} />}
+          {menuOpen? <BurguerMenuClose size={15} className={styles.burgerMenu} /> : <BurguerMenu size={15} className={styles.burgerMenuClose} />}
         </button>
         {<nav className={`${styles.navbarMobile} ${menuOpen ? styles.menuOpen : ''}`}>
           <ul>

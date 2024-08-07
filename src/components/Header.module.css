@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.2); 
@@ -21,11 +20,18 @@
 
 .logo {
   color: #f3f4f3;
+  font-size: 1.5rem;
 }
 
 .navbar ul {
   display: flex;
   gap: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 79px;
 }
 
 .navbar li {
