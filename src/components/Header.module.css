@@ -1,0 +1,33 @@
+.header {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.menu {
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  margin-left: 79px;
+}
+
+.navbar {
+  margin-right: 139px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0px;
+}
