@@ -1,4 +1,4 @@
-import '../global.css';
+import AboutMe from './components/AboutMe';
 import Banner from './components/Banner';
 import Header from './components/Header';
 
@@ -7,6 +7,7 @@ export default function App() {
     <div>
       <Header />
       <Banner />
+      <AboutMe />
     </div>
   )
 }
