@@ -1,0 +1,59 @@
+:root {
+    --grey-green-100: #f3f4f3;
+    --grey-green-200: #edefee;
+    --grey-green-300: #dadddb;
+    --grey-green-400: #87928b;
+    --grey-green-500: #7a837d;
+    --grey-green-600: #6c756f;
+    --grey-green-700: #656e68;
+    --grey-green-800: #515853;
+    --grey-green-900: #3d423f;
+    --grey-green-1000: #2f3331;
+     
+    --orange-100: #faf4ee;
+    --orange-200: #f8efe6;
+    --orange-300: #f0deca;
+    --orange-400: #ce9455;
+    --orange-500: #b9854d;
+    --orange-600: #a57644;
+    --orange-700: #9b6f40;
+    --orange-800: #7c5933;
+    --orange-900: #5d4326;
+    --orange-1000: #48341e;
+    
+    --grey-1: #fbfcfb;
+    --grey-2: #f9faf9;
+    --grey-3: #f2f5f3;
+    --grey-4: #d5e0d9;
+    --grey-5: #c0cac3;
+    --grey-6: #aab3ae;
+    --grey-7: #a0a8a3;
+    --grey-8: #808682;
+    --grey-9: #606562;
+    --grey-10: #4b4e4c;
+    --grey-11: #4b4e4c;
+    --grey-12: #242525;
+    --grey-13: #111111;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+     -webkit-font-smoothing: antialiased;
+  }
+  
+  body,
+  input,
+  textarea,
+  button {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
