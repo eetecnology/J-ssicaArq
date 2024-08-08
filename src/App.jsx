@@ -10,11 +10,8 @@ export default function App() {
       <Header />
       <Banner />
       <AboutMe />
-<<<<<<< HEAD
-      <Summary/>
-=======
+      <Summary />
       <Budget />
->>>>>>> 7903dcd208fa2399d720c116ecd3e2b43c8c0e91
     </div>
   )
 }
