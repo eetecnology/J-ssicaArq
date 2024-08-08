@@ -9,31 +9,12 @@
     align-items: center;
     color: var(--grey-green-1);
   }
+
+  .content {
+    margin-left: 7.9rem;
+  }
   
   .content h1 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    margin-left: 7.9rem;
   }
-  
-  .content button {
-    background-color: transparent;
-    border: 1px solid var(--grey-green-1);
-    color: var(--grey-green-1);
-    padding: 1.5rem 2rem;
-    border-radius: 5px;
-    border: 1px solid var(--grey-green-1);
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 7.9rem;
-    background: var(--grey-green-11);
-    font-size: 2rem;
-    transition: all .3s;
-  }
-  
-  .content button:hover {
-    background-color: var(--grey-green-1);
-    color: var(--grey-13);
-    transform: scale(1.1);
-  }
-  

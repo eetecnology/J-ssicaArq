@@ -1,4 +1,5 @@
 import styles from './Banner.module.css';
+import Button from './Button';
 
 export default function Banner() {
   return (
@@ -6,7 +7,9 @@ export default function Banner() {
       <div className={styles.content}>
         <h1>BUSCAMOS ENTENDER O</h1> 
         <h1>GOSTO DO CLIENTE</h1>
-        <button>VER PROJETOS</button>
+        <Button className={styles.button}>
+          VER PROJETOS
+        </Button>
       </div>
     </section>
   );
