@@ -12,30 +12,30 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
+      <div className={styles.logo}>
+          JÉSSICA CAMPOS
+      </div>
       <div className={styles.menu}>
-        <div className={styles.logo}>
-          Jéssica Campos
-        </div>
         <nav className={styles.navbar}>
           <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#evaluation">Avaliação</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#projects">PROJETOS</a></li>
+            <li><a href="#evaluation">AVALIAÇÕES</a></li>
+            <li><a href="#contact">CONTATO</a></li>
           </ul>
         </nav>
-        <button onClick={toggleMenu} className={styles.buttonMenu}>
-          {menuOpen? <BurguerMenuClose size={15} className={styles.burgerMenu} /> : <BurguerMenu size={15} className={styles.burgerMenuClose} />}
-        </button>
-        {<nav className={`${styles.navbarMobile} ${menuOpen ? styles.menuOpen : ''}`}>
-          <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#evaluation">Avaliação</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </nav>}
       </div>
+      <button onClick={toggleMenu} className={styles.buttonMenu}>
+        {menuOpen? <BurguerMenuClose size={15} className={styles.burgerMenu} /> : <BurguerMenu size={15} className={styles.burgerMenuClose} />}
+      </button>
+      {<nav className={`${styles.navbarMobile} ${menuOpen ? styles.menuOpen : ''}`}>
+        <ul>
+          <li><a href="#about">SOBRE</a></li>
+          <li><a href="#projects">PROJETOS</a></li>
+          <li><a href="#evaluation">AVALIAÇÕES</a></li>
+          <li><a href="#contact">CONTATO</a></li>
+        </ul>
+      </nav>}
     </header>
   );
 }
