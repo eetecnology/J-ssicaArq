@@ -1,0 +1,62 @@
+.fund {
+    background-color: var(--grey-green-1);
+}
+.summary {
+    margin: 1rem 0 0 7.9rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+    font-size: 2.5rem;
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.resume {
+    font-size: 2rem;
+    text-align: start;
+}
+
+.box {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 8.6rem 0 0 0;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.box div {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1.7rem;
+    flex: 1 1 30rem;
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 76.8rem) {
+    .summary {
+        margin: 1rem;
+    }
+
+
+.box {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.box div {
+    flex: 0 0 auto;
+    min-width: 20rem;
+}
+
+}

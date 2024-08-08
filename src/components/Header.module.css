@@ -9,7 +9,7 @@
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -24,11 +24,13 @@
 .logo {
   color: var(--grey-green-1);
   font-size: 1.5rem;
+  margin-left: 7.9rem;
 }
 
 .navbar ul {
   display: flex;
   gap: 5rem;
+  margin-right: 7.9rem;
 }
 
 .navbar li {
@@ -53,6 +55,7 @@
 
 .burgerMenu, .burgerMenuClose {
   color: var(--grey-green-1);
+  margin-right: 7.9rem;
 }
 
 .navbarMobile {

@@ -1,6 +1,7 @@
 import AboutMe from './components/AboutMe';
 import Banner from './components/Banner';
 import Header from './components/Header';
+import Summary from './components/Summary';
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
       <Banner />
       <AboutMe />
+      <Summary/>
     </div>
   )
 }
