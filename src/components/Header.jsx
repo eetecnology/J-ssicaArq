@@ -25,7 +25,7 @@ export default function Header() {
           </ul>
         </nav>
         <button onClick={toggleMenu} className={styles.buttonMenu}>
-          {menuOpen? <BurguerMenuClose className={styles.burgerMenu} /> : <BurguerMenu className={styles.burgerMenuClose} />}
+          {menuOpen? <BurguerMenuClose size={15} className={styles.burgerMenu} /> : <BurguerMenu size={15} className={styles.burgerMenuClose} />}
         </button>
         {<nav className={`${styles.navbarMobile} ${menuOpen ? styles.menuOpen : ''}`}>
           <ul>

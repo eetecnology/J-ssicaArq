@@ -1,40 +1,39 @@
 .banner {
     position: relative;
     width: 100%;
-    height: 85vh; /* Ajuste a altura conforme necessário */
+    height: 85vh;
     background: url('/banner1.webp') no-repeat center center;
     background-size: cover;
     display: flex;
     justify-content: left;
     align-items: center;
-    color: white;
+    color: var(--grey-green-100);
   }
   
   .content h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
-    margin-left: 79px;
-    
+    margin-bottom: 2rem;
+    margin-left: 7.9rem;
   }
   
   .content button {
     background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 15px 20px;
+    border: 1px solid var(--grey-green-100);
+    color: var(--grey-green-100);
+    padding: 1.5rem 2rem;
     border-radius: 5px;
-    border: 1px solid #f3f4f3;
+    border: 1px solid var(--grey-green-100);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 79px;
-    background: rgba(0, 0, 0, 0.5);
-    font-size: 20px;
+    margin-left: 7.9rem;
+    background: var(--background-transparent-05);
+    font-size: 2rem;
     transition: all .3s;
   }
   
   .content button:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--grey-green-100);
+    color: var(--grey-13);
     transform: scale(1.1);
   }
   
@@ -45,7 +44,7 @@
     }
   
     button {
-      padding: 8px 16px;
+      padding: 0.8rem 1.6rem;
     }
   }
   
@@ -55,7 +54,7 @@
     }
   
     button {
-      padding: 6px 12px;
+      padding: 0.6rem 1.2rem;
     }
   }
   
