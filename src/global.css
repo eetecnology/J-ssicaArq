@@ -47,24 +47,54 @@
     font-style: normal;
   }
   
-  body {
-     -webkit-font-smoothing: antialiased;
-  }
-  
-  body,
-  input,
-  textarea,
-  button {
-    font-weight: 400;
-    font-size: 1rem;
-  }
-  
-  button {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
+body {
+    -webkit-font-smoothing: antialiased;
+}
 
-  button:hover {
-    background: none;
+body,
+input,
+textarea,
+button {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: none;
+}
+
+@media (max-width: 1280px) {
+  * {
+    font-size: 60%;
   }
+}
+
+@media (max-width: 1150px) {
+  * {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 800px) {
+  * {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  * {
+    font-size: 48%;
+  }
+}

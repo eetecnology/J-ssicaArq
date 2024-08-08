@@ -37,24 +37,3 @@
     transform: scale(1.1);
   }
   
-  /* Estilos Responsivos */
-  @media (max-width: 76.8rem) {
-    .content h1 {
-      font-size: 1.5rem;
-    }
-  
-    button {
-      padding: 0.8rem 1.6rem;
-    }
-  }
-  
-  @media (max-width: 48rem) {
-    .content h1 {
-      font-size: 1.2rem;
-    }
-  
-    button {
-      padding: 0.6rem 1.2rem;
-    }
-  }
-  
