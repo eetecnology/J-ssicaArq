@@ -59,6 +59,10 @@ button {
   font-size: 1rem;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 button {
   background: none;
   border: none;

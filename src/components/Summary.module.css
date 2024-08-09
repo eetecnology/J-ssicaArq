@@ -1,6 +1,6 @@
 .fund {
     background-color: var(--grey-green-1);
-    margin-top: 15rem;
+    padding-top: 2rem;
 }
 .summary {
     margin: 1rem 0 0 7.9rem;
@@ -43,20 +43,17 @@
 
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 768px) {
     .summary {
         margin: 1rem;
     }
-
-
-.box {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
-
-.box div {
-    flex: 0 0 auto;
-    min-width: 20rem;
-}
+    .box {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .box div {
+        flex: 0 0 auto;
+        min-width: 20rem;
+    }
 }

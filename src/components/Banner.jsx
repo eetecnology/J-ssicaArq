@@ -7,7 +7,7 @@ export default function Banner() {
       <div className={styles.content}>
         <h1>BUSCAMOS ENTENDER O</h1> 
         <h1>GOSTO DO CLIENTE</h1>
-        <Button className={styles.button}>
+        <Button className={styles.button} bgActive={true}>
           VER PROJETOS
         </Button>
       </div>

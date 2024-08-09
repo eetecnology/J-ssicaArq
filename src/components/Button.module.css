@@ -6,9 +6,12 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: var(--grey-green-11);
   font-size: 2rem;
   transition: all .3s;
+}
+
+.bgPrimary {
+  background: var(--grey-green-11);
 }
 
 .button:hover {

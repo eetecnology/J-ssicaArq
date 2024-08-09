@@ -8,11 +8,11 @@ export default function Summary() {
         O QUE FAZEMOS
         </h2>
             <p className={styles.resume}>
-            Trabalhamos com o estilo contemporâneo e atemporal, 
-            onde buscamos entender o gosto do cliente e aplicar de <br /> 
-            forma personalizada, com um toque de decoração afetiva para ser sentida, 
-            com características únicas e sempre <br />
-            diferente uns dos outros, acreditamos que um lar deve refletir seus moradores.
+                Trabalhamos com o estilo contemporâneo e atemporal, 
+                onde buscamos entender o gosto do cliente e aplicar de <br /> 
+                forma personalizada, com um toque de decoração afetiva para ser sentida, 
+                com características únicas e sempre <br />
+                diferente uns dos outros, acreditamos que um lar deve refletir seus moradores.
             </p>
     </div>
     <div className={styles.box}>

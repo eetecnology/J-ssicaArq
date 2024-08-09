@@ -30,8 +30,8 @@
   margin: 2rem 0 6.8rem 0;
 }
 
-.description p, .descriptionFrame h6, .descriptionFrame p{
-  font-family: "Roboto", sans-serif;;
+.descriptionFrame h6{
+  font-family: "Roboto", sans-serif;
 } 
 
 .descriptionFrame {
@@ -81,8 +81,7 @@
 @media (max-width: 800px) {
   .about {
     flex-direction: column;
-    margin-top: 12rem;
-    margin: 8rem 0;
+    margin: 12rem 0;
   }
   .image {
     margin-right: 0;
