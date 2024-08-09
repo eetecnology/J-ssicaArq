@@ -1,6 +1,26 @@
+import { useEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import styles from './Summary.module.css'
 
+gsap.registerPlugin(ScrollTrigger); 
+
 export default function Summary() {
+    useEffect(() => {
+        const boxes = document.querySelectorAll(`.${styles.box} > div`)
+        boxes.forEach((box, index) => { gsap.fromTo(box, {x: -400 * (index + 1), opacity: 0.2 * (index), duration: 0.3 },
+    { 
+        x: 0,
+        opacity: 1,
+        scrollTrigger:{
+            trigger: box,
+            start: '-260 center',
+            end: 'bottom 500',
+            scrub: true,
+        }
+    } )})
+    },[])
+
     return (
  <section className={styles.fund}>
     <div className={styles.summary}>
