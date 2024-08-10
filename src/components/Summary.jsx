@@ -16,7 +16,7 @@ export default function Summary() {
             trigger: box,
             start: '-260 center',
             end: 'bottom 500',
-            scrub: true,
+            scrub: false,
         }
     } )})
     },[])

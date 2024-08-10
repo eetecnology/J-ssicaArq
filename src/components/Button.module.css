@@ -8,6 +8,7 @@
   transition: all 0.3s ease;
   font-size: 2rem;
   transition: all .3s;
+  font-family: var(--font);
 }
 
 .bgPrimary {
