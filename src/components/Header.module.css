@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: var(--font);
 }
 
 .menu {
@@ -23,7 +24,7 @@
 
 .logo {
   color: var(--grey-green-1);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-left: 7.9rem;
 }
 

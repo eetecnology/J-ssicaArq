@@ -34,7 +34,10 @@
     --grey-10: #4b4e4c;
     --grey-11: #4b4e4c;
     --grey-12: #242525;
+    --grey-a-12: #242425f1; 
     --grey-13: #111111;
+
+    --font: 'Playfair Display SC', serif;
 }
 * {
     margin: 0;
@@ -43,7 +46,6 @@
     font-size: 62.5%;
     list-style: none;
     text-decoration: none;
-    font-family: "Playfair Display SC", serif;
     font-style: normal;
   }
   
@@ -51,12 +53,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body,
-input,
-textarea,
-button {
-  font-weight: 400;
-  font-size: 1rem;
+h1, h2, h3 {
+  font-family: var(--font);
 }
 
 p {

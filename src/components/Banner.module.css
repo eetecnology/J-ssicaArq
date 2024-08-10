@@ -12,6 +12,11 @@
 
   .content {
     margin-left: 7.9rem;
+    font-family: var(--font);
+    
+  }
+  .content button {
+    font-family: var(--font);
   }
   
   .content h1 {
