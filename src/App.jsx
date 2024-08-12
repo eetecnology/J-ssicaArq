@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Summary from './components/Summary';
+import Rodape from './components/rodape';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Portfolio />
       <Budget />
       <Contact />
+      <Rodape />
     </div>
   )
 }

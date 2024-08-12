@@ -1,0 +1,67 @@
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;    
+    margin-top: 2rem;
+    background-color: rgba(135, 146, 139, 0.7);
+}
+
+.name h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .coment {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-bottom: 0;
+    max-width: 1054px;
+    width: 50%;
+  }
+
+  .coment p {
+    font-size: 1.5rem;
+
+  }
+
+  .container {
+    margin-bottom: 4rem;
+  }
+
+  .container h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    max-width: 490px;
+    width: 100%;
+    margin-bottom: 1rem;
+    
+  }
+
+  .container ul li{
+    display: flex;
+    
+    font-size: 1rem;
+    max-width: 490px;
+    width: 100%;
+  }
+
+  .navegation h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    max-width: 490px;
+    width: 100%;
+    margin-bottom: 1rem;
+    
+  }
+
+  .navegation ul li{
+    display: flex;    
+    font-size: 1rem;
+    max-width: 490px;
+    width: 100%;
+  }
