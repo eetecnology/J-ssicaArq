@@ -5,6 +5,8 @@
     height: 230px;    
     margin-top: 2rem;
     background-color: rgba(135, 146, 139, 0.7);
+    padding-left: 8rem;
+    padding-right: 10rem;
 }
 
 .name h3 {
@@ -26,16 +28,15 @@
   }
 
   .container {
-    margin-bottom: 4rem;
+    
+    width: 50%;
   }
 
   .container h3{
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 2rem;
     max-width: 490px;
-    width: 100%;
+    
     margin-bottom: 1rem;
     
   }
@@ -45,7 +46,7 @@
     
     font-size: 1rem;
     max-width: 490px;
-    width: 100%;
+    width: 50%;
   }
 
   .navegation h3{
