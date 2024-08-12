@@ -2,8 +2,12 @@ import styles from './Projects.module.css'
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
+import PropTypes from 'prop-types';
 
 export default function Projects({ imageLeft }) {
+  Projects.propTypes = {
+    imageLeft: PropTypes.string,
+  };
   return (
     <div className={styles.projects}>
       <div className={`${styles.description} ${imageLeft ? styles.descriptionRight : ""}`}>

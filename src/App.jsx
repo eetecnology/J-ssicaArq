@@ -1,6 +1,7 @@
 import AboutMe from './components/AboutMe';
 import Banner from './components/Banner';
 import Budget from './components/Budget';
+import Contact from './components/Contact';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Summary from './components/Summary';
@@ -14,6 +15,7 @@ export default function App() {
       <Summary />
       <Portfolio />
       <Budget />
+      <Contact />
     </div>
   )
 }
