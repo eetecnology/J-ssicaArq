@@ -1,16 +1,19 @@
 import styles from './Contact.module.css';
+import Map from './Map';
 
 export default function Contact() {
   return (
     <section className={styles.contact}>
       <div className={styles.description}>
         <h2>Contato</h2>
-        <p>Endereço: Rua Catiguá 159 - sala 703 , Tatuapé - SP</p>
-        <p>E-mail: contato@joicecamargoarquitetura.com.br</p>
-        <p>Telefone: (11) 97335-9681</p>
+        <div>
+          <p><b>Endereço:</b> Rua Catiguá 159 - sala 703 , Tatuapé - SP</p>
+          <p><b>E-mail:</b> contato@joicecamargoarquitetura.com.br</p>
+          <p><b>Telefone:</b> (11) 97335-9681</p>
+        </div>
       </div>
       <div className={styles.map}>
-        MAPA
+        <Map />
       </div>
     </section>
   )
