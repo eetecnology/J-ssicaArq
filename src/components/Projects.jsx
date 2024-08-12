@@ -16,8 +16,10 @@ export default function Projects({ imageLeft }) {
     setExpandedImage(imageSrc);
   };
 
-  const handleCloseClick = () => {
-    setExpandedImage(null);
+  const handleContainerClick = (e) => {
+    if (e.target.classList.contains(styles.fullscreenImageContainer)) {
+      setExpandedImage(null);
+    }
   };
 
   return (
@@ -48,8 +50,10 @@ export default function Projects({ imageLeft }) {
         />
       </div>
       {expandedImage && (
-        <div className={styles.fullscreenImageContainer}>
-          <button className={styles.closeButton} onClick={handleCloseClick}>X</button>
+        <div 
+          className={styles.fullscreenImageContainer} 
+          onClick={handleContainerClick}
+        >
           <img src={expandedImage} alt="Imagem expandida" className={styles.fullscreenImage} />
         </div>
       )}
