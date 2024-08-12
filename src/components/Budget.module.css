@@ -31,3 +31,11 @@
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+/*Design Responsivo*/
+@media (max-width: 600px) {
+  .description {
+    left: 0;
+    max-width: none;
+  }
+}
