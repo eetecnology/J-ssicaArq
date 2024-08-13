@@ -78,23 +78,29 @@
 }
 
 @media (max-width: 768px) {
-    .summary {
-        margin: 1rem;
-    }
-    .box {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-    .box div {
-        position: absolute;
-        flex: 0 0 auto;
-        min-width: 20rem;
-    }
     .fund {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        display: flex;
+        width: 100%;
+        height: 116vh;
+    }
+    .summary {
+        margin: 1rem auto;
+        flex-direction: column;
+        width: 100%;
     }
 
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-around;
+        gap: 1rem;
+        margin: 2rem auto;
+    }
+
+    .box div {
+        display: flex;
+        flex-direction: column;
+        font-size: 3.3rem;
+    }
 }

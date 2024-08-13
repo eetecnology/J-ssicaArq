@@ -28,14 +28,14 @@ export default function Header() {
       <button onClick={toggleMenu} className={styles.buttonMenu}>
         {menuOpen? <BurguerMenuClose size={15} className={styles.burgerMenu} /> : <BurguerMenu size={15} className={styles.burgerMenuClose} />}
       </button>
-      {<nav className={`${styles.navbarMobile} ${menuOpen ? styles.menuOpen : ''}`}>
+      <nav className={`${styles.navbarMobile} ${menuOpen ? styles.menuOpen : ''}`}>
         <ul>
           <li><a href="#about">SOBRE</a></li>
           <li><a href="#projects">PROJETOS</a></li>
           <li><a href="#evaluation">AVALIAÇÕES</a></li>
           <li><a href="#contact">CONTATO</a></li>
         </ul>
-      </nav>}
+      </nav>
     </header>
   );
 }
