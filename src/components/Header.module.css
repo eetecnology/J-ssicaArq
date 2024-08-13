@@ -88,18 +88,17 @@
 
 .navbarMobile {
   position: fixed;
-  top: 8.2rem;
+  top: 6.2rem;
   width: 25rem;
   right: 0;
   opacity: 0;
   visibility: hidden;
   height: 100%;
-  background-color: var(--grey-green-10);
   transform: translateY(100%);
 }
 
 .navbarMobile ul {
-  background-color: var(--grey-green-10);
+  background-color: var(--grey-green-12);
 }
 
 .navbarMobile ul li {
@@ -131,9 +130,6 @@
   .navbar ul {
     gap: 3rem;
   }
-}
-
-@media (max-width: 600px) {
   .navbar {
     display: none;
   }
