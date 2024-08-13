@@ -1,68 +1,88 @@
-.rodape{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 230px;    
-    margin-top: 2rem;
-    background-color: rgba(135, 146, 139, 0.7);
-    padding-left: 8rem;
-    padding-right: 10rem;
+.rodape {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: var(--grey-8);
+  color: #ffffff;
+  font-family: var(--font);
 }
 
-.name h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.name { 
+width: 40%;
+}
+
+.container ul li {
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.name h3::after {
+  content: '';
+  display: block;
+  width: 25rem;
+  height: 0.5rem;
+  background-color: var(--orange-4);
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  animation: slideIn 1s ease-in-out;
+}
+
+.container h3::after {
+    content: '';
+    display: block;
+    width: 25rem;
+    height: 0.5rem;
+    background-color: var(--orange-4);
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+}
+
+.navegation h3::after {
+    content: '';
+    display: block;
+    width: 19rem;
+    height: 0.5rem;
+    background-color: var(--orange-4);
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    animation: slideIn 1s ease-in-out;
   }
 
-  .coment {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    margin-bottom: 0;
-    max-width: 1054px;
-    width: 50%;
-  }
+.coment p {
+  font-size: 2rem;
+  line-height: 1.5;
+}
 
-  .coment p {
-    font-size: 1.5rem;
+ul {
+  line-height: 2.4rem;
+  list-style: none;
+}
 
-  }
+.navegation li {
+  margin: 0.5rem 0;
+  transition: transform 0.3s;
+}
 
-  .container {
-    
-    width: 50%;
-  }
+.navegation li:hover {
+  transform: translateX(1.5rem);
+}
 
-  .container h3{
-    display: flex;
-    font-size: 2rem;
-    max-width: 490px;
-    
-    margin-bottom: 1rem;
-    
-  }
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 2rem;
+}
 
-  .container ul li{
-    display: flex;
-    
-    font-size: 1rem;
-    max-width: 490px;
-    width: 50%;
-  }
-
-  .navegation h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    max-width: 490px;
-    width: 100%;
-    margin-bottom: 1rem;
-    
-  }
-
-  .navegation ul li{
-    display: flex;    
-    font-size: 1rem;
-    max-width: 490px;
-    width: 100%;
-  }
+a:hover {
+  color: var(--grey-4);
+}

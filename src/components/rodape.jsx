@@ -1,6 +1,47 @@
+import { useEffect } from 'react';
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from './Rodape.module.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Rodape(){
+    useEffect(() => {
+        const rodas = document.querySelectorAll(`.${styles.rodape} > div`);
+        let mm = gsap.matchMedia();
+
+        mm.add("(max-width: 799px)", () => {
+            rodas.forEach((rodape) => {
+                gsap.fromTo(rodape, { x: -240, opacity: 0 }, {
+                    x: 0,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: rodape,
+                        start: '-400 center',
+                        end: 'bottom -500',
+                        scrub: false,
+                    }
+                });
+            });
+        });
+
+        mm.add("(min-width: 800px)", () => {
+            rodas.forEach((rodape, index) => {
+                gsap.fromTo(rodape, { x: -400 * (index + 1), opacity: 0 * (index), duration: 3 }, {
+                    x: 0,
+                    opacity: 1,
+                    scrollTrigger: {
+                        trigger: rodape,
+                        start: '-350 center',
+                        end: '-350 center',
+                        scrub: false,
+                    }
+                });
+            });
+        });
+
+        return () => mm.revert();
+    }, []);
     return(
         <section className={styles.rodape}>
             <div className={styles.name}>
