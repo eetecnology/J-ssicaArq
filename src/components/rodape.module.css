@@ -8,17 +8,18 @@
 }
 
 .name { 
-width: 40%;
+  max-width: 37.6rem;
+  width: 100%;
 }
 
 .container ul li {
-  font-size: 2rem;
-  line-height: 3.5rem;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
 }
 
-h3 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
+.rodape h3 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
@@ -35,40 +36,39 @@ h3 {
 }
 
 .container h3::after {
-    content: '';
-    display: block;
-    width: 25rem;
-    height: 0.5rem;
-    background-color: var(--orange-4);
-    position: absolute;
-    left: 0;
-    bottom: -0.5rem;
+  content: '';
+  display: block;
+  width: 25rem;
+  height: 0.5rem;
+  background-color: var(--orange-4);
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
 }
 
 .navegation h3::after {
-    content: '';
-    display: block;
-    width: 19rem;
-    height: 0.5rem;
-    background-color: var(--orange-4);
-    position: absolute;
-    left: 0;
-    bottom: -0.5rem;
-    animation: slideIn 1s ease-in-out;
-  }
-
-.coment p {
-  font-size: 2rem;
-  line-height: 1.5;
+  content: '';
+  display: block;
+  width: 19rem;
+  height: 0.5rem;
+  background-color: var(--orange-4);
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  animation: slideIn 1s ease-in-out;
 }
 
-ul {
-  line-height: 2.4rem;
+.coment p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.rodape ul {
+  line-height: 2.5rem;
   list-style: none;
 }
 
 .navegation li {
-  margin: 0.5rem 0;
   transition: transform 0.3s;
 }
 
@@ -76,13 +76,72 @@ ul {
   transform: translateX(1rem);
 }
 
-a {
+.navegation ul li a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-a:hover {
+.rodape a:hover {
   color: var(--grey-4);
+}
+
+@media (max-width: 1025px) {
+  .rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    padding-left: 10rem;
+  }
+
+  .name {
+    grid-column: 1;
+    grid-row: 1;
+    width: 60%;
+  }
+
+  .container {
+    grid-column: 1;
+  }
+
+  .navegation {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .rodape {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 1rem;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .name, .navegation, .container {
+    max-width: 330px;
+    width: 100%;
+  }
+
+  .container {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .navegation {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .name h3::after, 
+  .container h3::after, 
+  .navegation h3::after {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
